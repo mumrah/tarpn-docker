@@ -1,0 +1,3 @@
+This file is here so scripts can see if the internet is up by downloading this file.  
+It can also be used to make sure we have write permission to a directory. 
+test data  is on this line

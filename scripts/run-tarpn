@@ -1,0 +1,15 @@
+#!/bin/bash
+# 
+# Run BPQ in the foreground
+
+set -e
+
+echo "Starting linbpq"
+
+cd /home/pi/bpq
+
+# Generate bpq32.cfg from node.ini
+./make_local_cfg.sh
+
+#sudo setcap "CAP_NET_RAW=ep CAP_NET_BIND_SERVICE=ep" linbpq
+./linbpq "$@"
